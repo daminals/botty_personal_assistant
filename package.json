@@ -1,0 +1,24 @@
+{
+  "requires": false,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "botty",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "daniel kogan",
+  "license": "ISC",
+  "description": "botty",
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/rawr-xd.git"
+  }
+}

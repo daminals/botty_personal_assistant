@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> so hecking sexy</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type=text/javascript src="{{url_for('static', filename='jquery.js') }}"></script>
+    <script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script type=text/javascript> $(function() { $("#mybutton").click(function (event) { $.getJSON('/SomeFunction', { },
+    function(data) { }); return false; }); }); </script>
+    <script type=text/javascript> $(function() { $("#mybutton").click(function (event) { $.getJSON('/funky', { },
+    function(data) { }); return false; }); }); </script>
+    <script type=text/javascript> $(function() { $("#mybutton").click(function (event) { $.getJSON('/monky', { },
+    function(data) { }); return false; }); }); </script>
+
+</head>
+<body>
+
+<form action="/SomeFunction" method="post">
+    <button name="forwardBtn" type="submit">Forward</button>
+</form>
+<form action="/funky" method="post">
+    <button name="forwardBtn" type="submit">FUNKY</button>
+</form>
+<form action="/monky" method="post">
+    <button name="forwardBtn" type="submit">noyFUNKY</button>
+</form>
+
+{{ forward_message }}
+</body>
+</html>
