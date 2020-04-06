@@ -5,3 +5,5 @@ that was his mistake uwu
 
 
 flask + selenium + heroku web project
+
+TODO: REPLACE SAVING VARIABLE TO WRITING TO A DATABASE
